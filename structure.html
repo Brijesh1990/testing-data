@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>My first web page structure</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <script src='main.js'></script>
+    <style>
+        body 
+        {
+            background: url('images/back.jpg') no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        #main-section 
+        {
+            width: 85%;
+            height: 450px;
+            margin: auto;
+            background-color: white;
+            padding: 25px;
+            margin-top: 5%;
+            box-shadow: 2px 2px 2px 2px black;
+            border-radius: 5px;
+        }
+        .logo 
+        {
+            width: 50%;
+            height: auto;
+            float: left;
+        }
+        .logo h3 
+        {
+            font-size: 28px;
+            letter-spacing: 2px;
+            font-weight: 200;
+            text-shadow: 1px 0px blue;
+            animation: fadeIn 2s infinite;
+        }
+        .navbar 
+        {
+            width: 50%;
+            height: auto;
+            float: left;
+        }
+        .navbar ul li 
+        {
+            display: inline-block;
+            padding: 25px 20px;
+
+        }
+        .navbar a 
+        {
+            text-decoration: none;
+            list-style-type: none;
+            color: black;
+            font-size: 20px;
+            text-transform: capitalize;
+        }
+        #btn
+        {
+            width: auto;
+            height: auto;
+            padding: 8px;
+            background-color: #d4970b;
+            border: none;
+            border-radius: 5px;
+            color: white;
+        }
+        #btn b 
+        {
+            animation: flash 2s infinite;
+            font-weight: 500;
+        }
+        .content1
+        {
+            width: 40%;
+            height: auto;
+            float: left;
+            padding: 15px;
+
+        }
+        .content1 p 
+        {
+            color: blueviolet;
+            text-align: justify;
+        }
+        .content1 h1 
+        {
+            font-size: 45px;
+            color: green;
+            letter-spacing: 3px;
+
+        }
+        .content2
+        {
+            width: 50%;
+            height: auto;
+            float: left;
+            padding: 15px;
+
+        }
+        .content2 img 
+        {
+            width: 70%;
+            height: 300px;
+            margin-left: 15%;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="main-section">
+    <!-- logo section -->
+    <div class="logo">
+        <h3>Krish infotech</h3>
+    </div>
+    <!-- navbar section -->
+    <div class="navbar">
+        <ul>
+            <li><a href="#">home</a></li>
+            <li><a href="#">about us</a></li>
+            <li><a href="#">work</a></li>
+            <li><a href="#">info</a></li>
+            <li><a href="#"><button type="button" id="btn"><b>get started</b></button></a></li>
+        </ul>
+    </div>  
+    
+    <!-- content section -->
+   <div class="content1">
+    <h1>Table and<br> Database</h1>
+    <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias esse, sequi minus perferendis unde praesentium amet consequatur ut deserunt et magnam impedit quas voluptatum commodi laborum iusto eaque nemo cupiditate.</p>
+    <button type="button" id="btn">Learn More</button>
+
+
+   </div>
+   
+   <div class="content2">
+    <img src="images/myimages.png">
+   </div>
+    </div>
+    
+</body>
+</html>
